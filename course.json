@@ -1,0 +1,649 @@
+{
+  "course": "GISC 4315 - Satellite Positioning",
+  "source_pdf": "canvas-pages.pdf",
+  "source_pdf_pages": 530,
+  "detected_canvas_pages": 101,
+  "modules": [
+    {
+      "title": "📡 01 | Introduction to GPS",
+      "topics": [
+        {
+          "id": "topic-001",
+          "module": "📡 01 | Introduction to GPS",
+          "title": "📡 Overview Module 01: Introduction to GPS",
+          "pdf_page": 1
+        },
+        {
+          "id": "topic-002",
+          "module": "📡 01 | Introduction to GPS",
+          "title": "📚 GPS Overview and Governance",
+          "pdf_page": 4
+        },
+        {
+          "id": "topic-003",
+          "module": "📡 01 | Introduction to GPS",
+          "title": "📚 Background & Origins",
+          "pdf_page": 12
+        },
+        {
+          "id": "topic-004",
+          "module": "📡 01 | Introduction to GPS",
+          "title": "📚 Development of GPS",
+          "pdf_page": 24
+        },
+        {
+          "id": "topic-005",
+          "module": "📡 01 | Introduction to GPS",
+          "title": "📚 GPS Objectives",
+          "pdf_page": 32
+        },
+        {
+          "id": "topic-006",
+          "module": "📡 01 | Introduction to GPS",
+          "title": "📚 GPS Signals and Modernization",
+          "pdf_page": 42
+        },
+        {
+          "id": "topic-007",
+          "module": "📡 01 | Introduction to GPS",
+          "title": "📚 GPS Segments",
+          "pdf_page": 52
+        },
+        {
+          "id": "topic-008",
+          "module": "📡 01 | Introduction to GPS",
+          "title": "📚 Application and Accuracy",
+          "pdf_page": 65
+        }
+      ]
+    },
+    {
+      "title": "📡 02 | GPS Signal",
+      "topics": [
+        {
+          "id": "topic-009",
+          "module": "📡 02 | GPS Signal",
+          "title": "📡 Overview Module 02: GPS Signals",
+          "pdf_page": 85
+        },
+        {
+          "id": "topic-010",
+          "module": "📡 02 | GPS Signal",
+          "title": "📚 Trilateration, Unknowns, and One-way Ranging",
+          "pdf_page": 87
+        },
+        {
+          "id": "topic-011",
+          "module": "📡 02 | GPS Signal",
+          "title": "📚 The Navigation Message",
+          "pdf_page": 92
+        },
+        {
+          "id": "topic-012",
+          "module": "📡 02 | GPS Signal",
+          "title": "📚 The Control Segment",
+          "pdf_page": 97
+        },
+        {
+          "id": "topic-013",
+          "module": "📡 02 | GPS Signal",
+          "title": "📚 GPS Time",
+          "pdf_page": 101
+        },
+        {
+          "id": "topic-014",
+          "module": "📡 02 | GPS Signal",
+          "title": "📚 Ephemerides",
+          "pdf_page": 104
+        },
+        {
+          "id": "topic-015",
+          "module": "📡 02 | GPS Signal",
+          "title": "📚 Atmospheric Correction",
+          "pdf_page": 107
+        },
+        {
+          "id": "topic-016",
+          "module": "📡 02 | GPS Signal",
+          "title": "📚 The Almanac, Time to First Fix and Satellite Health",
+          "pdf_page": 110
+        },
+        {
+          "id": "topic-017",
+          "module": "📡 02 | GPS Signal",
+          "title": "📚 GPS Navigation Message Structure",
+          "pdf_page": 113
+        },
+        {
+          "id": "topic-018",
+          "module": "📡 02 | GPS Signal",
+          "title": "📚 The P and C/A Codes",
+          "pdf_page": 117
+        },
+        {
+          "id": "topic-019",
+          "module": "📡 02 | GPS Signal",
+          "title": "📚 GPS Ranging",
+          "pdf_page": 122
+        },
+        {
+          "id": "topic-020",
+          "module": "📡 02 | GPS Signal",
+          "title": "📚 Phase Angles and Shifts",
+          "pdf_page": 127
+        },
+        {
+          "id": "topic-021",
+          "module": "📡 02 | GPS Signal",
+          "title": "📚 The Integer Ambiguity Problem",
+          "pdf_page": 135
+        },
+        {
+          "id": "topic-022",
+          "module": "📡 02 | GPS Signal",
+          "title": "📚 Two Types of Observables",
+          "pdf_page": 140
+        },
+        {
+          "id": "topic-023",
+          "module": "📡 02 | GPS Signal",
+          "title": "📚 Spread Spectrum and Code Modulation of L1 GPS Carrier",
+          "pdf_page": 145
+        },
+        {
+          "id": "topic-024",
+          "module": "📡 02 | GPS Signal",
+          "title": "📚 More About Code Chips",
+          "pdf_page": 152
+        },
+        {
+          "id": "topic-025",
+          "module": "📡 02 | GPS Signal",
+          "title": "📚 Code Correlation",
+          "pdf_page": 158
+        },
+        {
+          "id": "topic-026",
+          "module": "📡 02 | GPS Signal",
+          "title": "📚 The Delay Lock Loop",
+          "pdf_page": 165
+        },
+        {
+          "id": "topic-027",
+          "module": "📡 02 | GPS Signal",
+          "title": "📚 Imperfect Oscillators and Clock Corrections",
+          "pdf_page": 170
+        },
+        {
+          "id": "topic-028",
+          "module": "📡 02 | GPS Signal",
+          "title": "📚 The Pseudorange Equation",
+          "pdf_page": 175
+        },
+        {
+          "id": "topic-029",
+          "module": "📡 02 | GPS Signal",
+          "title": "📚 The Carrier Phase Observable",
+          "pdf_page": 179
+        }
+      ]
+    },
+    {
+      "title": "03 | Geodetic Datums",
+      "topics": [
+        {
+          "id": "topic-030",
+          "module": "03 | Geodetic Datums",
+          "title": "📚 GPS/GNSS and Geodesy",
+          "pdf_page": 190
+        },
+        {
+          "id": "topic-031",
+          "module": "03 | Geodetic Datums",
+          "title": "📚 Elements of a Geodetic Reference Frame (Datum)",
+          "pdf_page": 201
+        },
+        {
+          "id": "topic-032",
+          "module": "03 | Geodetic Datums",
+          "title": "📚 Datums (Reference Frames)",
+          "pdf_page": 209
+        },
+        {
+          "id": "topic-033",
+          "module": "03 | Geodetic Datums",
+          "title": "📚 Development of the Ellipsoidal Model",
+          "pdf_page": 214
+        },
+        {
+          "id": "topic-034",
+          "module": "03 | Geodetic Datums",
+          "title": "📚 NAD27",
+          "pdf_page": 222
+        },
+        {
+          "id": "topic-035",
+          "module": "03 | Geodetic Datums",
+          "title": "📚 Geocentric Datum",
+          "pdf_page": 228
+        },
+        {
+          "id": "topic-036",
+          "module": "03 | Geodetic Datums",
+          "title": "📚 The Geoid",
+          "pdf_page": 234
+        },
+        {
+          "id": "topic-037",
+          "module": "03 | Geodetic Datums",
+          "title": "📚 Three Figures",
+          "pdf_page": 238
+        },
+        {
+          "id": "topic-038",
+          "module": "03 | Geodetic Datums",
+          "title": "📚 Modern Geocentric Datum",
+          "pdf_page": 242
+        },
+        {
+          "id": "topic-039",
+          "module": "03 | Geodetic Datums",
+          "title": "📚 North American Datums",
+          "pdf_page": 245
+        },
+        {
+          "id": "topic-040",
+          "module": "03 | Geodetic Datums",
+          "title": "📚 The International Terrestrial Reference System (ITRS)",
+          "pdf_page": 252
+        },
+        {
+          "id": "topic-041",
+          "module": "03 | Geodetic Datums",
+          "title": "📚 ITRF2014, WGS84 and NAD83",
+          "pdf_page": 256
+        },
+        {
+          "id": "topic-042",
+          "module": "03 | Geodetic Datums",
+          "title": "📚 Continuously Operating Reference Stations (CORS)",
+          "pdf_page": 262
+        }
+      ]
+    },
+    {
+      "title": "04 | State Plane Coordinates and Heights",
+      "topics": [
+        {
+          "id": "topic-043",
+          "module": "04 | State Plane Coordinates and Heights",
+          "title": "📚 State Plane Coordinates",
+          "pdf_page": 273
+        },
+        {
+          "id": "topic-044",
+          "module": "04 | State Plane Coordinates and Heights",
+          "title": "📚 Map Projection",
+          "pdf_page": 278
+        },
+        {
+          "id": "topic-045",
+          "module": "04 | State Plane Coordinates and Heights",
+          "title": "📚 Distortion",
+          "pdf_page": 285
+        },
+        {
+          "id": "topic-046",
+          "module": "04 | State Plane Coordinates and Heights",
+          "title": "📚 Decreasing Distortion",
+          "pdf_page": 290
+        },
+        {
+          "id": "topic-047",
+          "module": "04 | State Plane Coordinates and Heights",
+          "title": "📚 Secant Projections",
+          "pdf_page": 297
+        },
+        {
+          "id": "topic-048",
+          "module": "04 | State Plane Coordinates and Heights",
+          "title": "📚 Conformal",
+          "pdf_page": 301
+        },
+        {
+          "id": "topic-049",
+          "module": "04 | State Plane Coordinates and Heights",
+          "title": "📚 Projection Design",
+          "pdf_page": 305
+        },
+        {
+          "id": "topic-050",
+          "module": "04 | State Plane Coordinates and Heights",
+          "title": "📚 State Plane Coordinate Zones 1983, False Eastings and Scale",
+          "pdf_page": 312
+        },
+        {
+          "id": "topic-051",
+          "module": "04 | State Plane Coordinates and Heights",
+          "title": "📹 State Plane Coordinates by Dave Doyle",
+          "pdf_page": 321
+        },
+        {
+          "id": "topic-052",
+          "module": "04 | State Plane Coordinates and Heights",
+          "title": "📚 Elevation Factor",
+          "pdf_page": 322
+        },
+        {
+          "id": "topic-053",
+          "module": "04 | State Plane Coordinates and Heights",
+          "title": "📚 Grid and Geodetic Azimuths",
+          "pdf_page": 328
+        },
+        {
+          "id": "topic-054",
+          "module": "04 | State Plane Coordinates and Heights",
+          "title": "📚 Universal Transverse Mercator",
+          "pdf_page": 334
+        },
+        {
+          "id": "topic-055",
+          "module": "04 | State Plane Coordinates and Heights",
+          "title": "📚 Heights",
+          "pdf_page": 341
+        },
+        {
+          "id": "topic-056",
+          "module": "04 | State Plane Coordinates and Heights",
+          "title": "📚 Ellipsoidal Heights",
+          "pdf_page": 347
+        },
+        {
+          "id": "topic-057",
+          "module": "04 | State Plane Coordinates and Heights",
+          "title": "📚 The Geoid",
+          "pdf_page": 357
+        },
+        {
+          "id": "topic-058",
+          "module": "04 | State Plane Coordinates and Heights",
+          "title": "📚 Height Conversion",
+          "pdf_page": 364
+        },
+        {
+          "id": "topic-059",
+          "module": "04 | State Plane Coordinates and Heights",
+          "title": "📹 Vetical Datums by Dave Doyle",
+          "pdf_page": 369
+        },
+        {
+          "id": "topic-060",
+          "module": "04 | State Plane Coordinates and Heights",
+          "title": "📚 Geoidal Models",
+          "pdf_page": 371
+        },
+        {
+          "id": "topic-061",
+          "module": "04 | State Plane Coordinates and Heights",
+          "title": "📹 2022 Datum Change by Dave Doyle",
+          "pdf_page": 376
+        }
+      ]
+    },
+    {
+      "title": "05 | GPS Error Sources",
+      "topics": [
+        {
+          "id": "topic-062",
+          "module": "05 | GPS Error Sources",
+          "title": "📚 The Error Budget",
+          "pdf_page": 382
+        },
+        {
+          "id": "topic-063",
+          "module": "05 | GPS Error Sources",
+          "title": "📚 User Equivalent Range Error",
+          "pdf_page": 384
+        },
+        {
+          "id": "topic-064",
+          "module": "05 | GPS Error Sources",
+          "title": "📚 The Ionospheric Effect",
+          "pdf_page": 388
+        },
+        {
+          "id": "topic-065",
+          "module": "05 | GPS Error Sources",
+          "title": "📚 The Satellite Clock",
+          "pdf_page": 394
+        },
+        {
+          "id": "topic-066",
+          "module": "05 | GPS Error Sources",
+          "title": "📚 The Receiver Clock Bias, dT",
+          "pdf_page": 397
+        },
+        {
+          "id": "topic-067",
+          "module": "05 | GPS Error Sources",
+          "title": "📚 The Orbital Bias",
+          "pdf_page": 399
+        },
+        {
+          "id": "topic-068",
+          "module": "05 | GPS Error Sources",
+          "title": "📚 The Control Segment",
+          "pdf_page": 401
+        },
+        {
+          "id": "topic-069",
+          "module": "05 | GPS Error Sources",
+          "title": "📚 The Tropospheric Effect, dtrop",
+          "pdf_page": 404
+        },
+        {
+          "id": "topic-070",
+          "module": "05 | GPS Error Sources",
+          "title": "📚 Atmosphere and Baseline Length",
+          "pdf_page": 406
+        },
+        {
+          "id": "topic-071",
+          "module": "05 | GPS Error Sources",
+          "title": "📚 Multipath",
+          "pdf_page": 408
+        },
+        {
+          "id": "topic-072",
+          "module": "05 | GPS Error Sources",
+          "title": "📚 Receiver Noise",
+          "pdf_page": 412
+        },
+        {
+          "id": "topic-073",
+          "module": "05 | GPS Error Sources",
+          "title": "📚 Classification of GPS Positioning",
+          "pdf_page": 414
+        },
+        {
+          "id": "topic-074",
+          "module": "05 | GPS Error Sources",
+          "title": "📚 The Navigation Solution",
+          "pdf_page": 417
+        },
+        {
+          "id": "topic-075",
+          "module": "05 | GPS Error Sources",
+          "title": "📚 Relative Positioning",
+          "pdf_page": 419
+        },
+        {
+          "id": "topic-076",
+          "module": "05 | GPS Error Sources",
+          "title": "📚 Networks",
+          "pdf_page": 423
+        },
+        {
+          "id": "topic-077",
+          "module": "05 | GPS Error Sources",
+          "title": "📚 Differencing",
+          "pdf_page": 426
+        },
+        {
+          "id": "topic-078",
+          "module": "05 | GPS Error Sources",
+          "title": "📚 Cycle Slip",
+          "pdf_page": 429
+        },
+        {
+          "id": "topic-079",
+          "module": "05 | GPS Error Sources",
+          "title": "📚 Fixing Cycle Slips",
+          "pdf_page": 433
+        },
+        {
+          "id": "topic-080",
+          "module": "05 | GPS Error Sources",
+          "title": "📚 Components of the Carrier Phase Observable",
+          "pdf_page": 437
+        }
+      ]
+    },
+    {
+      "title": "06 | Receivers and Methods",
+      "topics": [
+        {
+          "id": "topic-081",
+          "module": "06 | Receivers and Methods",
+          "title": "📚 Common Features of GPS Receivers",
+          "pdf_page": 442
+        },
+        {
+          "id": "topic-082",
+          "module": "06 | Receivers and Methods",
+          "title": "📚 The Antenna and The Right Hand Circular Polarized Signal",
+          "pdf_page": 446
+        },
+        {
+          "id": "topic-083",
+          "module": "06 | Receivers and Methods",
+          "title": "📚 The Antenna",
+          "pdf_page": 447
+        },
+        {
+          "id": "topic-084",
+          "module": "06 | Receivers and Methods",
+          "title": "📚 The RF Section",
+          "pdf_page": 460
+        },
+        {
+          "id": "topic-085",
+          "module": "06 | Receivers and Methods",
+          "title": "📚 Tracking Loops",
+          "pdf_page": 466
+        },
+        {
+          "id": "topic-086",
+          "module": "06 | Receivers and Methods",
+          "title": "📚 Doppler Shift",
+          "pdf_page": 474
+        },
+        {
+          "id": "topic-087",
+          "module": "06 | Receivers and Methods",
+          "title": "📚 The Integer Ambiguity",
+          "pdf_page": 477
+        },
+        {
+          "id": "topic-088",
+          "module": "06 | Receivers and Methods",
+          "title": "📚 The Microprocessor",
+          "pdf_page": 481
+        },
+        {
+          "id": "topic-089",
+          "module": "06 | Receivers and Methods",
+          "title": "📚 The Control and Display Unit",
+          "pdf_page": 490
+        },
+        {
+          "id": "topic-090",
+          "module": "06 | Receivers and Methods",
+          "title": "📚 The Storage",
+          "pdf_page": 492
+        },
+        {
+          "id": "topic-091",
+          "module": "06 | Receivers and Methods",
+          "title": "📚 The Power",
+          "pdf_page": 493
+        },
+        {
+          "id": "topic-092",
+          "module": "06 | Receivers and Methods",
+          "title": "📚 Some GPS Surveying Methods",
+          "pdf_page": 495
+        },
+        {
+          "id": "topic-093",
+          "module": "06 | Receivers and Methods",
+          "title": "📚 Receiver Categories",
+          "pdf_page": 500
+        },
+        {
+          "id": "topic-094",
+          "module": "06 | Receivers and Methods",
+          "title": "📚 Recreational Receivers",
+          "pdf_page": 503
+        },
+        {
+          "id": "topic-095",
+          "module": "06 | Receivers and Methods",
+          "title": "📚 Local and Network Accuracy",
+          "pdf_page": 505
+        },
+        {
+          "id": "topic-096",
+          "module": "06 | Receivers and Methods",
+          "title": "📚 Mapping Receivers",
+          "pdf_page": 507
+        },
+        {
+          "id": "topic-097",
+          "module": "06 | Receivers and Methods",
+          "title": "📚 Surveying Receivers",
+          "pdf_page": 509
+        }
+      ]
+    },
+    {
+      "title": "07 | Static Global Positioning System Surveying",
+      "topics": [
+        {
+          "id": "topic-098",
+          "module": "07 | Static Global Positioning System Surveying",
+          "title": "📚 Static GPS Control Surveying",
+          "pdf_page": 513
+        },
+        {
+          "id": "topic-099",
+          "module": "07 | Static Global Positioning System Surveying",
+          "title": "📚 Planning a Static GPS/GNSS Control Survey: Accuracy and Precision",
+          "pdf_page": 516
+        },
+        {
+          "id": "topic-100",
+          "module": "07 | Static Global Positioning System Surveying",
+          "title": "📚 NGS Control Data Sheets",
+          "pdf_page": 523
+        },
+        {
+          "id": "topic-101",
+          "module": "07 | Static Global Positioning System Surveying",
+          "title": "📚 Control from Continuously Operating Networks",
+          "pdf_page": 526
+        }
+      ]
+    }
+  ]
+}

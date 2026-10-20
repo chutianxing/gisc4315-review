@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GISC 4315 Course Review</title>
+<style>
+:root{--navy:#001a3a;--teal:#007c92;--line:#d8dee4;--bg:#f5f7f9;--sidebar:355px}
+*{box-sizing:border-box}html,body{margin:0;height:100%;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:#1f2933}
+.app{height:100vh;display:grid;grid-template-columns:var(--sidebar) 1fr}
+.sidebar{height:100vh;overflow:auto;background:#fff;border-right:1px solid var(--line)}
+.brand{position:sticky;top:0;z-index:4;background:var(--navy);color:#fff;padding:17px 18px}
+.brand h1{font-size:18px;margin:0 0 4px}.brand p{font-size:12px;margin:0;opacity:.82}
+.search{position:sticky;top:68px;z-index:3;background:#fff;padding:11px;border-bottom:1px solid var(--line)}
+.search input{width:100%;padding:10px 11px;border:1px solid #b8c0c8;border-radius:7px;font-size:14px}
+.module{border-bottom:1px solid #e5e9ed}.module-title{background:#eef5f7;color:var(--navy);font-weight:700;padding:12px 14px;cursor:pointer}
+.topic{display:block;width:100%;border:0;background:#fff;text-align:left;padding:9px 12px 9px 24px;font-size:13px;line-height:1.28;cursor:pointer;color:#27333d}
+.topic:hover{background:#f5f7f9}.topic.active{background:#e6f3f5;border-left:4px solid var(--teal);padding-left:20px;color:#005d6d;font-weight:700}
+.main{height:100vh;display:flex;flex-direction:column;min-width:0}
+.toolbar{height:64px;flex:0 0 auto;background:#fff;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:10px;padding:10px 16px}
+.titlebox{min-width:0;flex:1}.title{font-weight:700;color:var(--navy);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.meta{font-size:12px;color:#66717c;margin-top:3px}
+.btn{border:1px solid #aeb7c0;background:#fff;border-radius:6px;padding:8px 10px;cursor:pointer}.btn:hover{background:#f4f6f8}.btn:disabled{opacity:.4;cursor:default}
+.viewer-wrap{flex:1;min-height:0;background:#565c61}.viewer{width:100%;height:100%;border:0;background:#565c61}
+.hidden{display:none!important}.mobile{display:none}
+.note{font-size:11px;color:#66717c;padding:5px 12px;background:#fff;border-top:1px solid var(--line)}
+@media(max-width:720px){:root{--sidebar:300px}.sidebar{position:fixed;left:-310px;top:0;width:300px;z-index:20;transition:.2s;box-shadow:5px 0 18px rgba(0,0,0,.25)}.sidebar.open{left:0}.app{display:block}.main{height:100vh}.mobile{display:inline-block}}
+</style>
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar">
+    <div class="brand">
+      <h1>GISC 4315 Course Review</h1>
+      <p>Module/page navigation built from your PDF</p>
+    </div>
+    <div class="search"><input id="search" type="search" placeholder="Search page titles..."></div>
+    <nav id="nav"></nav>
+  </aside>
+  <main class="main">
+    <div class="toolbar">
+      <button id="menu" class="btn mobile">☰</button>
+      <div class="titlebox">
+        <div id="title" class="title">Loading…</div>
+        <div id="meta" class="meta"></div>
+      </div>
+      <button id="prev" class="btn">← Previous</button>
+      <button id="next" class="btn">Next →</button>
+    </div>
+    <div class="viewer-wrap">
+      <iframe id="viewer" class="viewer" title="Course review PDF"></iframe>
+    </div>
+    <div class="note">Use the left menu to jump directly to a Canvas page/topic while keeping the review material in this one web tab.</div>
+  </main>
+</div>
+<script>
+let data, flat=[];
+const $=s=>document.querySelector(s);
+async function boot(){
+  data=await fetch('course.json').then(r=>r.json());
+  flat=data.modules.flatMap(m=>m.topics);
+  buildNav();
+  const id=location.hash.replace('#','');
+  showTopic((flat.find(t=>t.id===id)||flat[0]).id,false);
+}
+function buildNav(){
+  const nav=$('#nav');
+  data.modules.forEach(m=>{
+    const sec=document.createElement('div'); sec.className='module';
+    const mh=document.createElement('div'); mh.className='module-title'; mh.textContent=m.title;
+    const list=document.createElement('div');
+    m.topics.forEach(t=>{
+      const b=document.createElement('button'); b.className='topic';
+      b.dataset.id=t.id; b.dataset.search=(m.title+' '+t.title).toLowerCase();
+      b.textContent=t.title; b.onclick=()=>showTopic(t.id,true); list.appendChild(b);
+    });
+    mh.onclick=()=>list.classList.toggle('hidden');
+    sec.append(mh,list); nav.appendChild(sec);
+  });
+}
+function showTopic(id,push=true){
+  const t=flat.find(x=>x.id===id); if(!t)return;
+  document.querySelectorAll('.topic').forEach(b=>b.classList.toggle('active',b.dataset.id===id));
+  $('#title').textContent=t.title;
+  $('#meta').textContent=`${t.module} • source PDF page ${t.pdf_page}`;
+  // Native PDF viewer opens directly at the selected source page.
+  $('#viewer').src=`canvas-pages.pdf#page=${t.pdf_page}&zoom=page-width`;
+  const i=flat.findIndex(x=>x.id===id);
+  $('#prev').disabled=i===0; $('#next').disabled=i===flat.length-1;
+  $('#prev').onclick=()=>i>0&&showTopic(flat[i-1].id,true);
+  $('#next').onclick=()=>i<flat.length-1&&showTopic(flat[i+1].id,true);
+  if(push) history.replaceState(null,'','#'+id);
+  $('.sidebar').classList.remove('open');
+}
+$('#search').addEventListener('input',e=>{
+  const q=e.target.value.trim().toLowerCase();
+  document.querySelectorAll('.topic').forEach(b=>b.classList.toggle('hidden',q&&!b.dataset.search.includes(q)));
+});
+$('#menu').onclick=()=>$('.sidebar').classList.toggle('open');
+window.addEventListener('hashchange',()=>{const id=location.hash.replace('#','');if(flat.some(t=>t.id===id))showTopic(id,false)});
+boot();
+</script>
+</body>
+</html>
